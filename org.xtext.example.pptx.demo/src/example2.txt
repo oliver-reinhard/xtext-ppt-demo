@@ -1,0 +1,26 @@
+
+content Eagle {
+	text "Big bird"
+}
+content Finch {
+	text "Small bird"
+}
+content Hawk {
+	text "Fast bird"
+}
+
+theme Light { }
+theme Dark  { background grey }
+
+presentation MyBirds1 {
+	theme Light
+	slide Eagle
+	slide Finch
+	slide Finch
+}
+
+presentation MyBirds2 {
+	theme Dark
+	slide Hawk
+	slide Eagle
+}

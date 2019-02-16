@@ -1,0 +1,10 @@
+
+content Lion {
+	text "Big cat"
+}
+content Cheetah {
+	text "Fast cat"
+}
+content Garfield {
+	text "Funny cat"
+}

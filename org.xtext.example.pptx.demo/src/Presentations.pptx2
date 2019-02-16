@@ -1,0 +1,19 @@
+
+presentation MyBirds1 {
+	theme Light
+	slide Finch
+	slide Eagle
+	slide Finch
+}
+
+presentation MyBirds2 {
+	theme Dark
+	slide Hawk
+	slide Eagle
+}
+
+presentation MyCats {
+	theme Light
+	slide Cheetah
+	slide Garfield
+}

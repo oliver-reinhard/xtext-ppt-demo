@@ -1,0 +1,10 @@
+
+content Eagle {
+	text "Big bird"
+}
+content Finch {
+	text "Small bird"
+}
+content Hawk {
+	text "Fast bird"
+}

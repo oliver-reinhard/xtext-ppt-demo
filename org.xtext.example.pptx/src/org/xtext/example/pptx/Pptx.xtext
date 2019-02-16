@@ -1,0 +1,30 @@
+grammar org.xtext.example.pptx.Pptx with org.eclipse.xtext.common.Terminals
+
+generate pptx "http://www.xtext.org/example/pptx/Pptx"
+
+Model:
+	(contents+=SlideContent
+	| presentations+=Presentation
+	| themes+=Theme)*;
+
+SlideContent:
+	'content' name=ID '{'
+	'text' text=STRING
+	('note' note=STRING)?
+	'}';
+
+Presentation:
+	'presentation' name=ID '{'
+	'theme' theme=[Theme]
+	('slide' slides+=[SlideContent])*
+	'}';
+
+Theme:
+	'theme' name=ID '{'
+	('background' background=Color)?
+	('header' header=STRING)?
+	('footer' footer=STRING)?
+	'}';
+
+enum Color:
+	WHITE='white' | GREY='grey';
